@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Список соискателей по имени</title>
+</head>
+<body bgcolor="#fa8e47">
+<main style ="width: 320px; margin: 0 auto;">
+    <h2>Найдено кандидатов: {{ count }}</h2><hr>
+    <ul>
+    {% for item in list %}
+
+    <li> <a href="/candidate/{{item['id']}}">{{ item['name'] }}</li></a>
+
+    {% endfor %}
+    </ul>
+    {% if limit %}
+    <h5>для вывода записей установлен лимит: {{ limit }}</h5>
+    {% endif %}
+    <hr><p><a href="/">Вернуться на главную</a></p>
+</main>
+</body>
+</html>

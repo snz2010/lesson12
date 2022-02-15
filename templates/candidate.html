@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Карточка соискателя</title>
+  </head>
+  <body bgcolor="#fa8e47">
+    <main style ="width: 320px; margin: 0 auto;">
+      {% if candidate_name %}
+        <h2>
+        Имя кандидата:</br>
+          <p>{{ candidate_name }}</p>
+        </h2>
+      <p>
+        <h3>
+        Позиция кандидата: {{ candidate_position }}
+        </h3>
+      </p>
+      <img src="{{candidate_picture}}" width=300/>
+      <p>
+        <h3>
+        Навыки кандидата: {{ candidate_skills }}
+        </h3>
+      </p>
+      <p>
+        <h3>
+        Возраст: {{ candidate_age }}
+        </h3>
+      </p>
+      {% endif %}
+      <hr><p><a href="/">Вернуться на главную</a></p>
+    </main>
+  </body>
+</html>
+
+
+

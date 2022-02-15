@@ -1,0 +1,7 @@
+{
+  "DEBUG": false,
+  "SOME_VARIABLE": "HELLO!",
+  "online":true,
+  "case-sensitive": true,
+  "limit":2
+}
